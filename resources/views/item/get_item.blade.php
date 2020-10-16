@@ -5,7 +5,7 @@
         <td>{!! $row->price !!}</td>
         <td>{!! $row->ammount !!}</td>
         <td>
-            <a href="javascript:void[0]" class="btn btn-primary btn-sm">Edit</a> <span>|</span>
+            <a href="javascript:void[0]" class="btn btn-primary btn-sm" onclick="edit(<?= $row->id ?>)">Edit</a> <span>|</span>
             <a href="javascript:void[0]" class="btn btn-danger btn-sm" onclick="destroy(<?= $row->id ?>)">Delete</a>
         </td>
     </tr>
